@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size:45px;
+    color:#444;
+    font-family: 'Crete Round', serif;
+}
+.orange{
+    color:#ff7a00;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+small{
+    font-size:13px;
+    font-style: italic;
+}
+/* *********************
+        header
+*********************** */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 30px 0;
+}
+header nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+header nav ul li{
+    padding: 0 10px;
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight:bold;
+    color:#444;
+}
+header nav ul li a:hover{
+    color:#ff7a00;
+}
+
+/* *********************
+      section: hero
+*********************** */
+
+#hero{
+    background:url('image/main.jpg') center;
+    height:500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero h2{
+    font-weight:normal;
+    text-transform:uppercase;
+    color:#444;
+    font-size:55px;
+    margin-bottom:1.3em;
+}
+.button-1{
+    display: inline-block;
+    color:#fff;
+    background-color:#ff7a00;
+    padding:10px 25px;
+    font-size:20px;
+    border-radius: 3px;
+}
+.button-1:hover{
+    background-color: #02b8dd;
+}
+
+/* *********************
+      section: steps
+*********************** */
+
+#steps .container{
+    display:flex;
+    justify-content:space-between;
+    padding: 4em 0;
+}
+
+#steps .step{
+    text-align: center;
+    width:30%; /*100% / 3 = 30% total:90%  /// 10% is for margins*/
+}
+
+#steps .step h4{
+    text-transform:uppercase;
+    font-size:24px;
+    color:#444;
+    margin: 1.5em 0 1em 0;
+}
+
+#steps .step p{
+    color: #777;
+    line-height:20px;
+}
+
+
+/* *********************
+      section: packs
+*********************** */
+
+#packs{
+    background-color: #efefef;
+    padding:60px 0;
+}
+#packs .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#packs .pack{
+    height:270px;
+    width:48%;
+    border-radius:10px;
+    
+}
+
+/*target the first div*/
+#packs .pack:first-child{
+    background: url('image/article-image-1.jpg') center no-repeat;
+    background-size: cover;
+}
+/*target the second div*/
+
+#packs .pack:last-child{
+    background:url('image/article-image-2.jpg') center no-repeat;
+    background-size: cover;
+
+}
+
+.pack .overlay{
+    
+    width: 45%;
+    height: 100%;
+    padding: 1em;
+    background-color:rgba(255,255,255,0.95);
+    text-align:center;
+    border-radius:10px 0 0 10px;
+}
+
+.pack .overlay h4{
+    padding:1em;
+    text-transform:uppercase;
+    color:#444;
+    font-size:24px;
+    
+    border-bottom: 1px solid #ddd;
+}
+.pack .overlay p{
+    line-height: 20px;
+    color:#777;
+    margin: 1em 0;
+}
+
+.button-2{
+    padding:6px 20px;
+    border-radius: 3px;
+    display: inline-block;
+    color:#fff;
+    background-color:#ff7a00;
+}
+.button-2:hover{
+    color:#fff;
+    background-color: #02b8dd;
+}
+
+/* *********************
+      section: cotact
+*********************** */
+
+#contact{
+    text-align: center;
+    padding: 60px 0;
+}
+
+#contact h3{
+    font-size:30px;
+    color:#444;
+    margin:0 auto 20px auto;
+    width:400px;
+    text-transform:uppercase;
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+
+#contact p{
+    line-height:20px;
+    color:#777;
+}
+
+#contact form{
+    margin:60px 0 20px;
+}
+
+#contact form label{
+    font-weight:bold;
+    font-size:20px;
+    margin-right:10px;
+    color:#777;
+}
+
+#contact form input[type="text"]{
+    padding:10px;
+    font-size: 20px;
+    margin-right:20px;
+    border:2px solid #ddd;
+    border-radius:3px;
+    outline: none;
+}
+
+.button-3{
+    color:#fff;
+    background-color: #02b8dd;
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 20px;
+    padding:12px;
+}
+.button-3:hover{
+    background-color: #444;
+}
+/* *********************
+        footer
+*********************** */
+footer{
+    background-color: #444;
+    text-align: center;
+    padding:5em 0;
+}
+
+footer h1{
+    color:white;
+    font-size: 50px;
+}
+
+footer p{
+    font-weight:bold;
+    padding-top: 2em;
+    color:#777;
+}
